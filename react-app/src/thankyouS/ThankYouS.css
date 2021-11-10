@@ -1,0 +1,29 @@
+$theme-colors: (
+    "primary":#0C9ACC, 
+    "secondary":#5E54F1,
+
+);
+
+.ellipse{
+    position: absolute;
+    right:65.5%
+}
+
+.s1{
+    position:absolute;
+    right:55%; 
+    bottom:5%;
+    height:500px;
+    width:500px
+}
+.details{
+    position:relative;
+    top:80%
+}
+
+.b2h{
+    position: relative;
+    left:30%
+}
+
+@import "~bootstrap/scss/bootstrap";

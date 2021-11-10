@@ -1,0 +1,6 @@
+.btn-default:active, .btn-default:focus {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    outline: 0;
+  }

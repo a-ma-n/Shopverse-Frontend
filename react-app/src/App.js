@@ -1,26 +1,25 @@
-import './App.css';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Landing from './landing';
-import SignUpS from './signupS';
-// import ThankYouS from './thankyouS';
-import QR_generator from './qr_generator';
-import SignUpB from './signupB';
-import SignInS from './signins';
-import { AuthProvider } from './context/AuthContext'
-import SignInB from './signinb';
-import ThankYouB from './thankyoub';
-import ThankYouS from './thankyouS/ThankYouS';
-import HomeS from './homeS';
-import HomeB from './homeB';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AddItem from './additem';
-import UpdateItem from './updateitem';
-import OrderNumber from './ordernumber';
+import './App.css';
+import { AuthProvider } from './context/AuthContext';
+import HomeB from './homeB';
+import Cart from './homeB/Cart';
 import ImageScan from './homeB/ImageScan';
 import ImageSearch from './homeB/ImageSearch';
 import SearchByText from './homeB/SearchByText';
-import Cart from './homeB/Cart';
-import Payment from './homeB/Token';
 import Token from './homeB/Token';
+import HomeS from './homeS';
+import Landing from './landing';
+import OrderNumber from './ordernumber';
+// import ThankYouS from './thankyouS';
+import QR_generator from './qr_generator';
+import SignInB from './signinb';
+import SignInS from './signins';
+import SignUpB from './signupB';
+import SignUpS from './signupS';
+import ThankYouB from './thankyoub';
+import ThankYouS from './thankyouS/ThankYouS';
+import UpdateItem from './updateitem';
 
 
 function App() {

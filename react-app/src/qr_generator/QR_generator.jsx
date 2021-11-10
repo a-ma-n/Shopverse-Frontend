@@ -1,14 +1,14 @@
-import React from 'react'
-import img1 from  "./images/Group 160.svg"
-import img2 from  "./images/Group 62.svg"
-import img3 from "./images/LOGO.svg"
-import { Image , Row, Col, Container, Jumbotron, Button} from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import QR_code from 'react-qr-code'
-import "./QR_generator.css"
-import { useAuth } from '../context/AuthContext'
 import axios from 'axios'
+import React from 'react'
+import { Button, Col, Container, Image, Jumbotron, Row } from 'react-bootstrap'
 import cookie from 'react-cookies'
+import QRcode from 'react-qr-code'
+import { Link } from 'react-router-dom'
+import { useAuth } from '../context/AuthContext'
+import img1 from "./images/Group 160.svg"
+import img2 from "./images/Group 62.svg"
+import img3 from "./images/LOGO.svg"
+import "./QR_generator.css"
 
 export default function QR_generator() {
     const {currentUser}=useAuth()
@@ -64,7 +64,7 @@ export default function QR_generator() {
             </Col>
             <Container>
             <Col  style={{outlineColor:"#DD5A34",position:"absolute", right:"20%", top:"35%", height:"150px", width:"150px"}}>
-            <QR_code value={UID}/>       
+            <QRcode value={UID}/>       
             </Col>
             </Container>
             </Row>

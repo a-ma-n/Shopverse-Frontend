@@ -1,14 +1,13 @@
-import React from 'react';
-import img1 from  "./images/Group 164.svg"
-import img2 from  "./images/Group 163.svg"
-import img3 from "./images/LOGO.svg"
-import GooglePayButton from '@google-pay/button-react'
-import {Image, Row, Col, Container, Alert, Button, Card} from 'react-bootstrap'
-import FeatherIcon from 'feather-icons-react'
-import {useAuth} from '../context/AuthContext'
-import { useHistory, Link } from "react-router-dom"
-import { useState } from 'react'
+import GooglePayButton from '@google-pay/button-react';
+import FeatherIcon from 'feather-icons-react';
+import React, { useState } from 'react';
+import { Alert, Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Link, useHistory } from "react-router-dom";
+import { useAuth } from '../context/AuthContext';
 import CartProducts from './CartProducts';
+import img2 from "./images/Group 163.svg";
+import img1 from "./images/Group 164.svg";
+import img3 from "./images/LOGO.svg";
 const Cart = () => {
     const { logout } = useAuth()
     const history = useHistory()
@@ -73,6 +72,7 @@ const Cart = () => {
                         allowedCardNetworks:['MASTERCARD','VISA'],
                     },
                     tokenizationSpecification:'PAYMENT_GATEWAY',
+                    // eslint-disable-next-line no-dupe-keys
                     parameters:{
                         gateway:"example",
                         gatewayMerchantId:"exampleGatewayMerchantId",

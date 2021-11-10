@@ -1,13 +1,12 @@
-import React from 'react';
-import img1 from  "./images/Group 164.svg"
-import img2 from  "./images/Group 163.svg"
-import img3 from "./images/LOGO.svg"
-import {Image, Row, Col, Container, Alert, Button} from 'react-bootstrap'
-import FeatherIcon from 'feather-icons-react'
-import {useAuth} from '../context/AuthContext'
-import { useHistory, Link } from "react-router-dom"
-import { useState } from 'react'
+import FeatherIcon from 'feather-icons-react';
+import React, { useState } from 'react';
+import { Alert, Col, Container, Image, Row } from 'react-bootstrap';
+import { Link, useHistory } from "react-router-dom";
+import { useAuth } from '../context/AuthContext';
 import Camera from './Camera';
+import img2 from "./images/Group 163.svg";
+import img1 from "./images/Group 164.svg";
+import img3 from "./images/LOGO.svg";
 
 const ImageScan = () => {
     const { logout } = useAuth()
